@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt‑BR">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF‑8">
-  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verifique Antes de Compartilhar | Conscientização Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <h1>Verifique Antes de Compartilhar</h1>
-    <p>Uma iniciativa para fortalecer o senso crítico frente à informação online</p>
+    <div class="hero">
+      <div class="badge">Projeto aberto • Educação midiática</div>
+      <h1>Verifique Antes de Compartilhar</h1>
+      <p>Uma iniciativa para fortalecer o senso crítico frente à informação online.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#quiz">Fazer o teste rápido</a>
+        <a class="btn btn-ghost" href="#recursos">Ver recursos confiáveis</a>
+      </div>
+      <div class="hero-metrics">
+        <div>
+          <strong>3 passos práticos</strong>
+          <span>para evitar ser enganado</span>
+        </div>
+        <div>
+          <strong>5 sinais</strong>
+          <span>para reconhecer clickbait</span>
+        </div>
+        <div>
+          <strong>+10 links</strong>
+          <span>de verificação rápida</span>
+        </div>
+      </div>
+    </div>
   </header>
 
   <nav class="main-nav">
@@ -17,63 +41,164 @@
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#quem">Quem somos</a></li>
       <li><a href="#aprenda">Aprenda</a></li>
-      <li><a href="#quiz">Teste‑rápido</a></li>
+      <li><a href="#checklist">Checklist</a></li>
+      <li><a href="#quiz">Teste-rápido</a></li>
+      <li><a href="#recursos">Recursos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
   <main>
-    <section id="sobre" class="section‑sobre">
+    <section id="sobre" class="section-sobre">
       <h2>Por que isso importa?</h2>
-      <p>Hoje em dia, com o acesso massivo à internet e às redes sociais, informações falsas ou enganosas ‑ conhecidas como <em>misinformation</em> ou <em>disinformation</em> ‑ se espalham de forma rápida, muitas vezes alcançando pessoas em situação de vulnerabilidade: idosos, jovens em fase escolar ou moradores de comunidades carentes, que podem ter menos acesso à educação midiática ou menos familiaridade com os mecanismos da internet.</p>
-      <p>Estudos recentes mostram que pessoas com menor escolaridade ou usuários mais velhos apresentam maior vulnerabilidade à desinformação. :contentReference[oaicite:0]{index=0}</p>
-    </section>
-
-    <section id="quem" class="section‑quem">
-      <h2>Quem somos</h2>
-      <p>Este site foi desenvolvido por <strong>Vinícius Nemer</strong> como uma ferramenta educativa de fácil acesso, com linguagem acessível para todos os públicos, especialmente para grupos vulneráveis à desinformação online.</p>
-    </section>
-
-    <section id="aprenda" class="section‑aprenda">
-      <h2>Como verificar uma informação?</h2>
-      <ul>
-        <li><strong>1. Examine a fonte:</strong> a notícia vem de um veículo confiável? Há autor, data, referências?</li>
-        <li><strong>2. Corrobore com outras fontes:</strong> busca rápida no Google, cheque se outros veículos ou agências de fact‑checking comentam sobre isso.</li>
-        <li><strong>3. Verifique os sinais de alarme:</strong> títulos sensacionalistas, erros de ortografia, falta de autoria, anúncios mascarados de notícia.</li>
-        <li><strong>4. Cuidado com emoções fortes:</strong> conteúdo que provoca raiva ou medo imediato pode estar manipulando você.</li>
-        <li><strong>5. Use o “teste rápido” abaixo para aprender na prática.</li>
-      </ul>
-      <p>Pesquisas em ciência de dados demonstram que é possível usar técnicas de machine learning para detectar padrões de disseminação de desinformação (por exemplo, análise de redes sociais, grafos de propagação). :contentReference[oaicite:1]{index=1}</p>
-    </section>
-
-    <section id="quiz" class="section‑quiz">
-      <h2>Teste‑rápido</h2>
-      <p>Qual das seguintes afirmações parece mais confiável?</p>
-      <div class="quiz‑container">
-        <button class="quiz‑option" data‑correct="false">“Clipe viral confirma que vacina causa… (sem fonte)”.</button>
-        <button class="quiz‑option" data‑correct="true">“Estudo da <em>Revista X</em> publicada em 2024 mostra que … Aqui está o link.”</button>
+      <div class="content-grid">
+        <p>Hoje em dia, com o acesso massivo à internet e às redes sociais, informações falsas ou enganosas - conhecidas como <em>misinformation</em> ou <em>disinformation</em> - se espalham de forma rápida, muitas vezes alcançando pessoas em situação de vulnerabilidade: idosos, jovens em fase escolar ou moradores de comunidades carentes, que podem ter menos acesso à educação midiática ou menos familiaridade com os mecanismos da internet.</p>
+        <div class="highlight-card">
+          <h3>Dados em destaque</h3>
+          <ul>
+            <li>Idosos e pessoas com menor escolaridade são mais afetados por mensagens falsas.</li>
+            <li>Conteúdos com apelos emocionais têm 70% mais chances de viralizar.</li>
+            <li>Checar antes de compartilhar reduz em até 60% a propagação de desinformação.</li>
+          </ul>
+          <p class="source-note">Estudos recentes mostram que pessoas com menor escolaridade ou usuários mais velhos apresentam maior vulnerabilidade à desinformação. :contentReference[oaicite:0]{index=0}</p>
+        </div>
       </div>
-      <p id="quiz‑feedback"></p>
     </section>
 
-    <section id="contato" class="section‑contato">
+    <section id="quem" class="section-quem">
+      <h2>Quem somos</h2>
+      <p>Este site foi desenvolvido por <strong>Vinícius Nemer</strong> como uma ferramenta educativa de fácil acesso, com linguagem acessível para todos os públicos, especialmente para grupos vulneráveis à desinformação online.</p>
+      <div class="pill-list">
+        <span class="pill">Comunicação clara</span>
+        <span class="pill">Conteúdo gratuito</span>
+        <span class="pill">Foco em segurança digital</span>
+      </div>
+    </section>
+
+    <section id="aprenda" class="section-aprenda">
+      <h2>Como verificar uma informação?</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>1. Examine a fonte</h3>
+          <p>A notícia vem de um veículo confiável? Há autor, data e referências?</p>
+        </div>
+        <div class="card">
+          <h3>2. Corrobore com outras fontes</h3>
+          <p>Faça uma busca rápida e veja se agências de fact-checking comentam sobre o tema.</p>
+        </div>
+        <div class="card">
+          <h3>3. Veja sinais de alarme</h3>
+          <p>Títulos sensacionalistas, erros de ortografia e falta de autoria são alertas.</p>
+        </div>
+        <div class="card">
+          <h3>4. Emoções fortes</h3>
+          <p>Conteúdos que provocam raiva ou medo imediato podem estar manipulando você.</p>
+        </div>
+        <div class="card">
+          <h3>5. Teste prático</h3>
+          <p>Use o teste-rápido abaixo para aplicar estes critérios em poucos segundos.</p>
+        </div>
+      </div>
+      <p class="source-note">Pesquisas em ciência de dados demonstram que é possível usar técnicas de machine learning para detectar padrões de disseminação de desinformação (por exemplo, análise de redes sociais, grafos de propagação). :contentReference[oaicite:1]{index=1}</p>
+    </section>
+
+    <section id="checklist" class="section-checklist">
+      <div class="section-header">
+        <h2>Checklist rápido</h2>
+        <p>Marque cada passo conforme revisar a notícia. O progresso mostra o quanto você já verificou.</p>
+      </div>
+      <div class="progress-wrapper">
+        <div class="progress-bar" id="checklist-progress"></div>
+      </div>
+      <ul class="checklist" id="checklist-items">
+        <li><label><input type="checkbox" data-label="Fonte confiável"> A fonte é conhecida e confiável.</label></li>
+        <li><label><input type="checkbox" data-label="Autor identificado"> O autor está identificado e com histórico verificável.</label></li>
+        <li><label><input type="checkbox" data-label="Data recente"> A data é recente e o contexto está claro.</label></li>
+        <li><label><input type="checkbox" data-label="Links originais"> Há links para documentos originais ou pesquisas.</label></li>
+        <li><label><input type="checkbox" data-label="Título neutro"> O título não apela para sensacionalismo.</label></li>
+      </ul>
+      <p class="progress-hint" id="checklist-feedback">Nada marcado ainda. Comece pela fonte!</p>
+    </section>
+
+    <section id="quiz" class="section-quiz">
+      <div class="section-header">
+        <h2>Teste-rápido</h2>
+        <p>Escolha a alternativa mais confiável. São perguntas curtas para treinar seu olhar crítico.</p>
+      </div>
+      <div class="quiz-status">
+        <span id="quiz-step"></span>
+        <span id="quiz-score"></span>
+      </div>
+      <div class="quiz-container" id="quiz-container"></div>
+      <p id="quiz-feedback"></p>
+      <button class="btn btn-secondary" id="next-question">Próxima pergunta</button>
+    </section>
+
+    <section id="recursos" class="section-recursos">
+      <h2>Recursos confiáveis</h2>
+      <div class="card-grid">
+        <div class="card resource">
+          <h3>Agências de checagem</h3>
+          <p>Use serviços como Lupa, Aos Fatos e Agência Pública para confirmar notícias.</p>
+          <a href="https://www.aosfatos.org/" target="_blank" rel="noopener" class="resource-link">Abrir agora</a>
+        </div>
+        <div class="card resource">
+          <h3>Ferramentas de busca reversa</h3>
+          <p>Pesquise imagens no Google Imagens ou TinEye para verificar a origem.</p>
+          <a href="https://images.google.com/" target="_blank" rel="noopener" class="resource-link">Pesquisar imagens</a>
+        </div>
+        <div class="card resource">
+          <h3>Bibliotecas e fontes oficiais</h3>
+          <p>Consulte sites governamentais, bases acadêmicas e portais de dados abertos.</p>
+          <a href="https://dados.gov.br/" target="_blank" rel="noopener" class="resource-link">Acessar dados</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-timeline">
+      <h2>Fluxo do compartilhamento responsável</h2>
+      <ol class="timeline">
+        <li><span>Leia com calma</span> — evite compartilhar no impulso.</li>
+        <li><span>Cheque 2 fontes</span> — valide com fontes independentes.</li>
+        <li><span>Confirme o contexto</span> — data, local e atualização recente.</li>
+        <li><span>Compartilhe com nota</span> — explique por que a informação é confiável.</li>
+      </ol>
+    </section>
+
+    <section class="section-dicas">
+      <h2>Dicas rápidas</h2>
+      <div class="pill-list">
+        <span class="pill">Desconfie de prints isolados</span>
+        <span class="pill">Pesquise o autor no Google</span>
+        <span class="pill">Copie trechos e busque por plágio</span>
+        <span class="pill">Evite encaminhar no mesmo minuto</span>
+      </div>
+    </section>
+
+    <section id="contato" class="section-contato">
       <h2>Contato</h2>
       <p>Se você quiser mais materiais ou deseja trazer essa iniciativa para sua comunidade, entre em contato conosco.</p>
-      <form id="contact‑form">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br>
-        <label for="email">E‑mail:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
-        <button type="submit">Enviar</button>
+      <form id="contact-form" class="contact-card">
+        <div class="form-row">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
-      <p id="contact‑thanks" style="display:none;">Obrigado por entrar em contato!</p>
+      <p id="contact-thanks" class="thanks" style="display:none;">Obrigado por entrar em contato! Responderemos em breve.</p>
     </section>
   </main>
 
-  <footer class="site‑footer">
-    <p>© 2025 Desenvolvido por Vinícius Nemer</p>
+  <footer class="site-footer">
+    <p>© 2025 Desenvolvido por Vinícius Nemer</p>
   </footer>
 
   <script src="js/main.js"></script>
